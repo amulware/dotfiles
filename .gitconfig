@@ -1,0 +1,35 @@
+[user]
+	name = amulware
+	email = amul@amulware.net
+[push]
+	default = matching
+[core]
+	editor = subl -n -w
+	pager = less
+
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+[fetch]
+    recurseSubmodules = true
+[pull]
+    recurseSubmodules = true
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f

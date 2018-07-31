@@ -1,0 +1,5 @@
+ln -sv `pwd`/.bash_profile ~/.bash_profile
+ln -sv `pwd`/.gitconfig ~/.gitconfig
+ln -sv `pwd`/.gitexcludes ~/.gitexcludes
+
+. ~/.bash_profile
