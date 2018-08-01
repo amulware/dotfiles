@@ -38,6 +38,11 @@ up()
 # random
 alias reload=". ~/.bash_profile"
 alias today="date +%Y-%m-%d"
+alias snowman="cls && echo '
+  _===_
+ \\(.,.)
+  ( : )\\
+  ( : )'"
 
 # git
 alias checkout="git checkout"
